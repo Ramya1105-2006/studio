@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { movies, genres, languages } from '@/lib/data';
+import { movies } from '@/lib/data';
 import { MovieCard } from '@/components/movie-card';
 import { HeroCarousel } from '@/components/hero-carousel';
 import {
@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/carousel"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-
 const topGenres = ['Action', 'Romance', 'Thriller', 'Sci-Fi', 'Horror'];
 const topLanguages = ['English', 'Tamil', 'Hindi', 'Malayalam', 'Kannada', 'Telugu'];
 
@@ -24,9 +23,9 @@ export default function HomePage() {
   const getMoviesByGenre = (genre: string) => movies.filter(m => m.genre.includes(genre));
   const getMoviesByLanguage = (language: string) => movies.filter(m => m.language === language);
   
-  const top10Hollywood = movies.filter(m => m.language === 'English').slice(0, 10);
   const top10Kollywood = movies.filter(m => m.language === 'Tamil').slice(0, 10);
   const top10Bollywood = movies.filter(m => m.language === 'Hindi').slice(0, 10);
+  const top10Hollywood = movies.filter(m => m.language === 'English').slice(0, 10);
   const topAction = movies.filter(m => m.genre.includes('Action')).slice(0, 10);
   const topRomance = movies.filter(m => m.genre.includes('Romance')).slice(0, 10);
   const topThriller = movies.filter(m => m.genre.includes('Thriller')).slice(0, 10);
