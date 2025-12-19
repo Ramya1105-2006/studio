@@ -1,12 +1,57 @@
-import { notFound } from 'next/navigation';
+"use client";
+
+import { notFound, useParams } from 'next/navigation';
 import { bookings, movies, cities } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { CheckCircle2 } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Booking } from '@/lib/types';
+import { Skeleton } from '@/components/ui/skeleton';
 
-export default function ConfirmationPage({ params }: { params: { bookingId: string } }) {
-  const booking = bookings.find(b => b.id === params.bookingId);
-  
+export default function ConfirmationPage() {
+  const params = useParams();
+  const bookingId = params.bookingId as string;
+  const [booking, setBooking] = useState<Booking | null | undefined>(undefined);
+
+  useEffect(() => {
+    const foundBooking = bookings.find(b => b.id === bookingId);
+    setBooking(foundBooking || null);
+  }, [bookingId]);
+
+  if (booking === undefined) {
+    return (
+        <div className="container mx-auto px-4 py-12 flex items-center justify-center min-h-[calc(100vh-4rem)]">
+            <Card className="w-full max-w-2xl">
+                <CardHeader className="items-center text-center">
+                    <Skeleton className="w-16 h-16 rounded-full mb-4" />
+                    <Skeleton className="h-8 w-64 mb-2" />
+                    <Skeleton className="h-5 w-80" />
+                </CardHeader>
+                <CardContent className="space-y-6 pt-6">
+                    <div className="p-4 bg-muted/50 rounded-lg space-y-2">
+                        <Skeleton className="h-5 w-1/3" />
+                        <Skeleton className="h-5 w-2/3" />
+                    </div>
+                     <div className="space-y-4">
+                         <Skeleton className="h-6 w-1/2" />
+                         <div className="space-y-2 text-sm">
+                            <Skeleton className="h-5 w-full" />
+                            <Skeleton className="h-5 w-full" />
+                            <Skeleton className="h-5 w-full" />
+                         </div>
+                    </div>
+                    <Separator />
+                    <div className="flex justify-between">
+                        <Skeleton className="h-7 w-1/3" />
+                        <Skeleton className="h-7 w-1/4" />
+                    </div>
+                </CardContent>
+            </Card>
+        </div>
+    );
+  }
+
   if (!booking) {
     notFound();
   }
