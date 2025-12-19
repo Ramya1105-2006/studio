@@ -30,6 +30,8 @@ export default function HomePage() {
   const topRomance = getMoviesByGenre('Romance').slice(0, 10);
   const topThriller = getMoviesByGenre('Thriller').slice(0, 10);
   const topSciFi = getMoviesByGenre('Sci-Fi').slice(0, 10);
+  const topHorror = getMoviesByGenre('Horror').slice(0, 10);
+
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -107,22 +109,30 @@ export default function HomePage() {
           </section>
 
           {/* Browse by Genre Section */}
-          <section className="space-y-8">
-             <h2 className="text-3xl font-bold tracking-tighter text-center">Browse by Genre</h2>
-            {topGenres.map(genre => (
-              <div key={genre}>
-                <h3 className="text-2xl font-semibold tracking-tight mb-4">{genre}</h3>
-                 <Carousel opts={{ align: "start", dragFree: true }} className="w-full">
-                    <CarouselContent>
-                      {getMoviesByGenre(genre).map(movie => (
-                        <CarouselItem key={movie.id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                          <MovieCard movie={movie} />
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                 </Carousel>
+          <section>
+            <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Browse by Genre</h2>
+            <Tabs defaultValue="Action" className="w-full">
+              <div className="flex justify-center mb-6">
+                <TabsList>
+                  {topGenres.map(genre => (
+                    <TabsTrigger key={genre} value={genre}>{genre}</TabsTrigger>
+                  ))}
+                </TabsList>
               </div>
-            ))}
+              {topGenres.map(genre => (
+                <TabsContent key={genre} value={genre}>
+                  <Carousel opts={{ align: "start", dragFree: true }} className="w-full">
+                      <CarouselContent>
+                        {getMoviesByGenre(genre).map(movie => (
+                          <CarouselItem key={movie.id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                            <MovieCard movie={movie} />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                  </Carousel>
+                </TabsContent>
+              ))}
+            </Tabs>
           </section>
           
            {/* Movies by Language Section */}
