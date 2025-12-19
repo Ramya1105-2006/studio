@@ -1,10 +1,4 @@
-import data from './placeholder-images.json';
-
-export type ImagePlaceholder = {
-  id: string;
-  description: string;
-  imageUrl: string;
-  imageHint: string;
-};
-
-export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;
+// This file is intentionally left blank. 
+// The data is now managed directly in `src/lib/data.ts` to simplify the data structure.
+// Image URLs are generated dynamically using picsum.photos.
+export {};

@@ -10,18 +10,26 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/hooks/use-auth";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { Logo } from "./logo";
-import { LogOut, User as UserIcon } from "lucide-react";
+import { LogOut, User as UserIcon, Clapperboard, Ticket, Home } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+
+const navLinks = [
+  { href: "/home", label: "Home", icon: Home },
+  { href: "/movies", label: "Movies", icon: Clapperboard },
+  { href: "/profile", label: "Bookings", icon: Ticket },
+];
 
 export function Header() {
   const { user, logout } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleLogout = () => {
     logout();
-    router.push("/");
+    router.push("/login");
   };
 
   const getInitials = (name: string) => {
@@ -35,8 +43,21 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Logo />
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium ml-10">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "transition-colors hover:text-primary",
+                pathname === link.href ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="flex items-center space-x-2">
             {user && (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -69,7 +90,6 @@ export function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
             )}
-          </nav>
         </div>
       </div>
     </header>

@@ -5,6 +5,7 @@ import { useAuth } from '@/hooks/use-auth';
 import { useRouter } from 'next/navigation';
 import { Header } from '@/components/header';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Footer } from '@/components/footer';
 
 function FullScreenLoader() {
   return (
@@ -48,6 +49,7 @@ export default function MainAppLayout({
     <div className="relative flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 }
