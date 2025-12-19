@@ -138,18 +138,28 @@ export default function HomePage() {
            {/* Movies by Language Section */}
           <section>
             <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Movies by Language</h2>
-            <div className="space-y-12">
+            <Tabs defaultValue="English" className="w-full">
+                <div className="flex justify-center mb-6">
+                    <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
+                        {topLanguages.map(lang => (
+                            <TabsTrigger key={lang} value={lang}>{lang}</TabsTrigger>
+                        ))}
+                    </TabsList>
+                </div>
                 {topLanguages.map(lang => (
-                     <div key={lang}>
-                        <h3 className="text-2xl font-semibold tracking-tight mb-4">{lang}</h3>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                            {getMoviesByLanguage(lang).slice(0, 5).map(movie => (
-                                <MovieCard key={movie.id} movie={movie} />
-                            ))}
-                        </div>
-                     </div>
+                    <TabsContent key={lang} value={lang}>
+                        <Carousel opts={{ align: "start", dragFree: true }} className="w-full">
+                            <CarouselContent>
+                                {getMoviesByLanguage(lang).map(movie => (
+                                    <CarouselItem key={movie.id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                                        <MovieCard movie={movie} />
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                        </Carousel>
+                    </TabsContent>
                 ))}
-            </div>
+            </Tabs>
           </section>
 
         </div>
