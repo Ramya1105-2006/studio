@@ -112,7 +112,7 @@ export const movies: Movie[] = [
     id: 'movie-16',
     title: 'Manjummel Boys',
     description: 'A group of friends get into a daring rescue mission to save their friend from Guna Caves, a perilously deep pit from where nobody has ever been brought back.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/y2h3j5g5j5g5j5g5j5g5j5g5.jpg',
+    posterUrl: 'https://image.tmdb.org/t/p/original/bswrtewwthpsh6nABiqKevU4UBI.jpg',
     posterHint: 'friends cave rescue',
     language: 'Malayalam',
     genre: ['Adventure', 'Thriller'],
