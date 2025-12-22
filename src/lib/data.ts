@@ -68,7 +68,7 @@ export const movies: Movie[] = [
     id: 'movie-12',
     title: 'Super Deluxe',
     description: 'An unfaithful wife, an estranged father, and an angry son find their lives intertwining on a fateful day.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/gJbYy4o6kX3tS7gSj1sO3d5aA5N.jpg',
+    posterUrl: 'https://wallpapercave.com/wp/wp8210327.jpg',
     posterHint: 'multiple stories',
     language: 'Tamil',
     genre: ['Thriller', 'Drama', 'Comedy'],
