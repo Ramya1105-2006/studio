@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -96,7 +97,7 @@ export default function HomePage() {
                 <h2 className="text-3xl font-bold tracking-tighter">Movies by Language</h2>
                 <p className="text-muted-foreground mt-2">Cinema from Every Corner of India</p>
             </div>
-            <Tabs defaultValue="English" className="w-full">
+            <Tabs defaultValue="Tamil" className="w-full">
                 <div className="flex justify-center mb-6">
                     <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
                         {topLanguages.map(lang => (
@@ -125,3 +126,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+    

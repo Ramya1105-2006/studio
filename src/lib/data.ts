@@ -1,3 +1,4 @@
+
 import { Movie, User, City, Booking, Show } from './types';
 
 export const users: User[] = [
@@ -12,7 +13,7 @@ export const movies: Movie[] = [
     id: 'movie-3',
     title: 'Vikram',
     description: 'A special agent investigates a murder committed by a masked group of serial killers. However, a tangled web of clues leads him to the drug kingpin of Chennai.',
-    posterUrl: 'https://picsum.photos/seed/vikram/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/rSCl3n9ub6s4SseOzp4c2s3vVlR.jpg',
     posterHint: 'action hero',
     language: 'Tamil',
     genre: ['Action', 'Thriller'],
@@ -23,7 +24,7 @@ export const movies: Movie[] = [
     id: 'movie-4',
     title: "K.G.F: Chapter 2",
     description: 'In the blood-soaked Kolar Gold Fields, Rocky\'s name strikes fear into his foes. While his allies look up to him, the government sees him as a threat to law and order.',
-    posterUrl: 'https://picsum.photos/seed/kgf2/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/kGFnC21eYxg2V2a2s4S7iC3h3e.jpg',
     posterHint: 'powerful man',
     language: 'Kannada',
     genre: ['Action', 'Crime', 'Drama'],
@@ -34,7 +35,7 @@ export const movies: Movie[] = [
     id: 'movie-5',
     title: 'RRR',
     description: 'A fictitious story about two legendary revolutionaries and their journey away from home before they started fighting for their country in the 1920s.',
-    posterUrl: 'https://picsum.photos/seed/rrr/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/uS1A15s0mC73s89e2Q2n2U4Sg3S.jpg',
     posterHint: 'two heroes',
     language: 'Telugu',
     genre: ['Action', 'Drama'],
@@ -45,7 +46,7 @@ export const movies: Movie[] = [
     id: 'movie-6',
     title: 'Dangal',
     description: 'Former wrestler Mahavir Singh Phogat and his two wrestler daughters struggle towards glory at the Commonwealth Games in the face of societal oppression.',
-    posterUrl: 'https://picsum.photos/seed/dangal/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/p3sA2cQzRzA4sM4vH2fSJaA3tY.jpg',
     posterHint: 'wrestling family',
     language: 'Hindi',
     genre: ['Action', 'Biography', 'Drama'],
@@ -56,7 +57,7 @@ export const movies: Movie[] = [
     id: 'movie-11',
     title: 'Asuran',
     description: 'A farmer from an underprivileged caste clashes with a wealthy, upper-caste landlord.',
-    posterUrl: 'https://picsum.photos/seed/asuran/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/v1x3b3aB6s4s3p2f4kGk1a4p3K.jpg',
     posterHint: 'village action',
     language: 'Tamil',
     genre: ['Action', 'Drama'],
@@ -67,7 +68,7 @@ export const movies: Movie[] = [
     id: 'movie-12',
     title: 'Super Deluxe',
     description: 'An unfaithful wife, an estranged father, and an angry son find their lives intertwining on a fateful day.',
-    posterUrl: 'https://picsum.photos/seed/superdeluxe/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/gJbYy4o6kX3tS7gSj1sO3d5aA5N.jpg',
     posterHint: 'multiple stories',
     language: 'Tamil',
     genre: ['Thriller', 'Drama', 'Comedy'],
@@ -78,7 +79,7 @@ export const movies: Movie[] = [
     id: 'movie-13',
     title: '3 Idiots',
     description: 'Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them "idiots".',
-    posterUrl: 'https://picsum.photos/seed/3idiots/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/66A9454v3d3aL3a12uUv3d3a.jpg',
     posterHint: 'college friends',
     language: 'Hindi',
     genre: ['Comedy', 'Drama'],
@@ -89,7 +90,7 @@ export const movies: Movie[] = [
     id: 'movie-14',
     title: 'Andhadhun',
     description: 'A series of mysterious events change the life of a blind pianist, who must now report a crime that he should technically not know about.',
-    posterUrl: 'https://picsum.photos/seed/andhadhun/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/dy3v3g9s3g3v3g9s3g3v3g9s3.jpg',
     posterHint: 'blind pianist',
     language: 'Hindi',
     genre: ['Crime', 'Thriller'],
@@ -100,7 +101,7 @@ export const movies: Movie[] = [
     id: 'movie-15',
     title: 'Bahubali: The Beginning',
     description: 'In the kingdom of Mahishmati, a chivalrous warrior named Sivudu, while pursuing his love, finds himself in a new world of adventure, war, and deceit.',
-    posterUrl: 'https://picsum.photos/seed/bahubali1/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/fT3m21N9Qx1t3o4a2a1t3o4.jpg',
     posterHint: 'epic warrior',
     language: 'Telugu',
     genre: ['Action', 'Drama'],
@@ -111,7 +112,7 @@ export const movies: Movie[] = [
     id: 'movie-16',
     title: 'Manjummel Boys',
     description: 'A group of friends get into a daring rescue mission to save their friend from Guna Caves, a perilously deep pit from where nobody has ever been brought back.',
-    posterUrl: 'https://picsum.photos/seed/manjummel/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/y2h3j5g5j5g5j5g5j5g5j5g5.jpg',
     posterHint: 'friends cave rescue',
     language: 'Malayalam',
     genre: ['Adventure', 'Thriller'],
@@ -122,7 +123,7 @@ export const movies: Movie[] = [
     id: 'movie-17',
     title: 'Jai Bhim',
     description: 'When a tribal man is arrested for a case of alleged theft, his wife turns to a human-rights lawyer to help bring justice.',
-    posterUrl: 'https://picsum.photos/seed/jaibhim/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/s2g2s2g2s2g2s2g2s2g2s2g2s.jpg',
     posterHint: 'lawyer justice',
     language: 'Tamil',
     genre: ['Crime', 'Drama'],
@@ -133,7 +134,7 @@ export const movies: Movie[] = [
     id: 'movie-18',
     title: 'Kantara',
     description: 'When greed paves the way for betrayal, scheming and murder, a young tribal reluctantly dons the traditions of his ancestors to seek justice.',
-    posterUrl: 'https://picsum.photos/seed/kantara/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/a9h9h9h9h9h9h9h9h9h9h9h9h.jpg',
     posterHint: 'tribal ritual',
     language: 'Kannada',
     genre: ['Action', 'Adventure', 'Drama'],
@@ -144,7 +145,7 @@ export const movies: Movie[] = [
     id: 'movie-1',
     title: 'Jawan',
     description: 'A high-octane action thriller that outlines the emotional journey of a man who is set to rectify the wrongs in the society.',
-    posterUrl: 'https://picsum.photos/seed/jawan/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/jJb2s2j2j2j2j2j2j2j2j2j2j.jpg',
     posterHint: 'action hero pose',
     language: 'Hindi',
     genre: ['Action', 'Thriller'],
@@ -155,7 +156,7 @@ export const movies: Movie[] = [
     id: 'movie-2',
     title: 'Leo',
     description: 'Parthiban is a mild-mannered cafe owner in Kashmir, who fends off a gang of murderous thugs and gains local fame. This brings him to the attention of a drug cartel who claim that he was once a part of them.',
-    posterUrl: 'https://picsum.photos/seed/leo/800/1200',
+    posterUrl: 'https://image.tmdb.org/t/p/w500/gGz0g0g0g0g0g0g0g0g0g0g0g.jpg',
     posterHint: 'intense man',
     language: 'Tamil',
     genre: ['Action', 'Crime', 'Drama'],
@@ -208,6 +209,14 @@ export const cities: City[] = [
       { id: 'theatre-4', name: 'Cinepolis, Andheri', address: 'Andheri West, Mumbai', shows: [shows[3], shows[1], shows[5]] },
     ],
   },
+   {
+    id: 'city-3',
+    name: 'Bengaluru',
+    theatres: [
+      { id: 'theatre-5', name: 'PVR, Orion Mall', address: 'Rajajinagar, Bengaluru', shows: [shows[0], shows[1], shows[2]] },
+      { id: 'theatre-6', name: 'INOX, Garuda Mall', address: 'Ashok Nagar, Bengaluru', shows: [shows[3], shows[4], shows[5]] },
+    ],
+  },
 ];
 
 export const bookings: Booking[] = [
@@ -249,3 +258,5 @@ export const createBooking = async (bookingData: Omit<Booking, 'id' | 'bookingTi
     }, 1500); // Simulate network delay
   });
 };
+
+    
