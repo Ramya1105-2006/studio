@@ -57,7 +57,7 @@ export const movies: Movie[] = [
     id: 'movie-11',
     title: 'Asuran',
     description: 'A farmer from an underprivileged caste clashes with a wealthy, upper-caste landlord.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/v1x3b3aB6s4s3p2f4kGk1a4p3K.jpg',
+    posterUrl: 'https://m.media-amazon.com/images/M/MV5BODM2Njc3YTMtMWY3ZC00YzgxLTljNWEtN2U2NTQ5MTI3NmUwXkEyXkFqcGc@._V1_.jpg',
     posterHint: 'village action',
     language: 'Tamil',
     genre: ['Action', 'Drama'],
