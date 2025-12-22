@@ -156,7 +156,7 @@ export const movies: Movie[] = [
     id: 'movie-2',
     title: 'Leo',
     description: 'Parthiban is a mild-mannered cafe owner in Kashmir, who fends off a gang of murderous thugs and gains local fame. This brings him to the attention of a drug cartel who claim that he was once a part of them.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/gGz0g0g0g0g0g0g0g0g0g0g0g.jpg',
+    posterUrl: 'https://images.indianexpress.com/2023/10/Leo-Movie-Release-and-Review-Live-Updates2.jpg',
     posterHint: 'intense man',
     language: 'Tamil',
     genre: ['Action', 'Crime', 'Drama'],
