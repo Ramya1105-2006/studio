@@ -163,6 +163,17 @@ export const movies: Movie[] = [
     duration: 164,
     rating: 7.2,
   },
+  {
+    id: 'movie-19',
+    title: '8 Vasanthalu',
+    description: 'A poetic attempt at a love story that spans eight seasons, but can it overcome its tedious nature?',
+    posterUrl: 'https://www.m9.news/wp-content/uploads/2025/06/8-vasanthalumovie-review-poetic-attempt-but-tedious-1024x768.jpg',
+    posterHint: 'couple love',
+    language: 'Telugu',
+    genre: ['Romance', 'Drama'],
+    duration: 150,
+    rating: 7.5,
+  },
 ];
 
 const generateBookedSeats = (totalSeats: number, fraction: number): string[] => {
@@ -263,3 +274,4 @@ export const createBooking = async (bookingData: Omit<Booking, 'id' | 'bookingTi
     
 
     
+

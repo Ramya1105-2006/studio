@@ -95,6 +95,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.m9.news',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
