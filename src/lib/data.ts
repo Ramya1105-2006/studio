@@ -134,7 +134,7 @@ export const movies: Movie[] = [
     id: 'movie-18',
     title: 'Kantara',
     description: 'When greed paves the way for betrayal, scheming and murder, a young tribal reluctantly dons the traditions of his ancestors to seek justice.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/a9h9h9h9h9h9h9h9h9h9h9h9h.jpg',
+    posterUrl: 'https://tse3.mm.bing.net/th/id/OIP.8Iyvo9EuMFsnsVWKO5fpZQHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3',
     posterHint: 'tribal ritual',
     language: 'Kannada',
     genre: ['Action', 'Adventure', 'Drama'],
