@@ -35,7 +35,7 @@ export const movies: Movie[] = [
     id: 'movie-5',
     title: 'RRR',
     description: 'A fictitious story about two legendary revolutionaries and their journey away from home before they started fighting for their country in the 1920s.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/uS1A15s0mC73s89e2Q2n2U4Sg3S.jpg',
+    posterUrl: 'https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg',
     posterHint: 'two heroes',
     language: 'Telugu',
     genre: ['Action', 'Drama'],
@@ -260,4 +260,6 @@ export const createBooking = async (bookingData: Omit<Booking, 'id' | 'bookingTi
 };
 
     
+    
+
     
