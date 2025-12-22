@@ -123,7 +123,7 @@ export const movies: Movie[] = [
     id: 'movie-17',
     title: 'Jai Bhim',
     description: 'When a tribal man is arrested for a case of alleged theft, his wife turns to a human-rights lawyer to help bring justice.',
-    posterUrl: 'https://image.tmdb.org/t/p/w500/s2g2s2g2s2g2s2g2s2g2s2g2s.jpg',
+    posterUrl: 'https://i.pinimg.com/736x/01/64/4d/01644dbd1ba7997ba436a73d4928e7a7.jpg',
     posterHint: 'lawyer justice',
     language: 'Tamil',
     genre: ['Crime', 'Drama'],
