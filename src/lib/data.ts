@@ -1,12 +1,13 @@
 
 
 
+
 import { Movie, User, City, Booking, Show } from './types';
 
 // The canonical source for users is now localStorage, managed in auth-context.tsx
 // This initial array is now only used to seed localStorage on first load.
 export const users: User[] = [
-  { id: 'user-1', name: 'John Doe', email: 'john@example.com', password: 'password123' },
+  { id: 'user-1', name: 'John Doe', email: 'john@example.com', password: 'password123', avatarUrl: '' },
 ];
 
 export const addUser = (user: User) => {
@@ -306,3 +307,4 @@ export const createBooking = async (bookingData: Omit<Booking, 'id' | 'bookingTi
     }, 1500); 
   });
 };
+
